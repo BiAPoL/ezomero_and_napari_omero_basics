@@ -6,7 +6,7 @@ This work is licensed by the Bio-Image Analysis Technology Development group (Bi
 
 Slides will be available [here]() soon.
 
-## Prerequisites
+## Prerequisites and Installation
 
 1. Download or clone this repository to your local machine.
     - Click the green "Code" button and then "Download ZIP"
@@ -21,14 +21,15 @@ Slides will be available [here]() soon.
         ```bash
         conda create -y -n napari-omero-ez python=3.11
         conda activate napari-omero-ez
-        conda install -c conda-forge -c bioconda napari-omero pyqt ezomero jupyterlab omero-py>=5.17.0
+        conda install -c conda-forge -c bioconda napari-omero pyqt ezomero jupyterlab cmap omero-py>=5.17.0
+        pip install napari-skimage
         ```
         If the above commands do not work, please create 2 separate environments, one for ezomero and one for napari-omero.
         - Environment for ezomero (only):
         ```bash
         conda create -n ezomero python=3.10
         conda activate ezomero
-        conda install jupyterlab
+        conda install jupyterlab cmap
         pip install https://github.com/glencoesoftware/zeroc-ice-py-linux-x86_64/releases/download/20240202/zeroc_ice-3.6.5-cp310-cp310-manylinux_2_28_x86_64.whl
         pip install ezomero
         ```
@@ -37,6 +38,7 @@ Slides will be available [here]() soon.
         conda create -n napari-omero python=3.10
         conda activate napari-omero
         conda install -c conda-forge napari-omero pyqt
+        pip install napari-skimage
         ```
 
 4. Test if the installations were successful:
@@ -68,6 +70,10 @@ Slides will be available [here]() soon.
         ```
         and checking if the jupyter lab window opens in your browser. Then, on the left side, navigate to the folder where you unzipped this repository and open the notebook `ezomero_exercise.ipynb`. Run the first cell (click on the cell and hit SHIFT + ENTER) and check if it runs without errors.
 
+
+## Example Data
+
+We used a sub-set of the BBBC014v1 set provided by Ilya Ravkin, available from the Broad Bioimage Benchmark Collection [Ljosa et al., Nature Methods, 2012]. For details and biological background see https://www.broadinstitute.org/bbbc/BBBC014/. The data can be found in this repository in data/BBBC014v1_subset.zip. Please upload it to OMERO or feel free to use your own data.
 
 # Acknowledgements
 
