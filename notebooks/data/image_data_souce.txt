@@ -1,0 +1,4 @@
+We used image set BBBC014v1 provided by Ilya Ravkin, available from the Broad Bioimage Benchmark Collection [Ljosa et al., Nature Methods, 2012]. For details and biological background see https://www.broadinstitute.org/bbbc/BBBC014/.
+
+
+The subset was collected from Massei, R. (2024). Galaxy Training Data for "Overview of the Galaxy OMERO-suite" [Data set]. Zenodo. https://doi.org/10.5281/zenodo.14205500.
